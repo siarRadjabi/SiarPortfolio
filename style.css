@@ -56,6 +56,8 @@ body{
 
 .navbar-toggler-icon{
     border: 2px solid goldenrod;
+    height: 125px;
+    width: 125px;
 }
 
 
@@ -778,6 +780,12 @@ body{
     body{
         cursor: pointer;
     }
+
+    .mainNavbar{
+        font-size: 25px;
+    }
+
+
     .inner-cursor{
         display: none;
     }
