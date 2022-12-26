@@ -304,7 +304,7 @@ body{
 
 #Service_Page{
     display: none;
-    animation: comeFromTop 2s forwards;
+    animation: comeFromRight 2s forwards;
     background-image: url("scott-graham-OQMZwNd3ThU-unsplash.jpg");
     background-size: 100% 100%;
 }
@@ -914,6 +914,15 @@ body{
   @keyframes comeFromLeft{
     0% {
       transform: translate(-100%);   }
+      100% {
+        transform: translate(0);   }
+}
+
+
+
+@keyframes comeFromRight{
+    0% {
+      transform: translate(100%);   }
       100% {
         transform: translate(0);   }
 }
