@@ -796,8 +796,18 @@ body{
         background-attachment: scroll;
     }
 
+    .keyword_list li img{
+        width: 150px;
+        height: 150px;
+    }
+
+
     #Barber_credit{
         font-size: 18px;
+    }
+
+    .Credit_Barber{
+        font-size: 16px;
     }
 
 }
