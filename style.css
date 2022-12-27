@@ -56,8 +56,9 @@ body{
 
 .navbar-toggler-icon{
     border: 2px solid goldenrod;
-    height: 75px;
-    width: 75px;
+    height: 60px;
+    width: 60px;
+    background-color: black;
 }
 
 
@@ -142,6 +143,15 @@ body{
   padding-bottom: 5%;
   padding-top: 5%;
 
+}
+
+.divider{
+    height:175px;
+    font-size:36px;
+    text-align: center;
+    color: goldenrod;
+    padding-top: 2%;
+    background-image:linear-gradient(to right,black,goldenrod);
 }
 
 
@@ -805,10 +815,46 @@ body{
         background-attachment: scroll;
     }
 
-    .keyword_list li img{
+    .keyword_list{
+        display: block;
+    }
+
+
+
+    .keyword_list li:nth-child(1){
+        border-right: none;
+        border-bottom: 2px solid goldenrod ;
+        padding-right: 30%;
+        padding-left: 30%;
+        padding-bottom: 2%;
+
+    }
+
+    .keyword_list li:nth-child(2){
+        border-right: none;
+        border-bottom: 2px solid goldenrod ;
+        padding-right: 30%;
+        padding-left: 30%;
+        margin-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .keyword_list li:nth-child(3){
+        border-right: none;
+        border-bottom: 2px solid goldenrod ;
+        padding-right: 30%;
+        padding-left: 30%;
+        margin-top: 2%;
+        padding-bottom: 2%;
+    }
+
+
+
+
+    /*.keyword_list li img{
         width: 150px;
         height: 150px;
-    }
+    }*/
 
 
     #Barber_credit{
@@ -891,7 +937,7 @@ body{
 
 @keyframes typing-2 {
   from { width: 0 }
-  to { width: 50%;
+  to { width: 55%;
        opacity: 1; }
 }
 
@@ -965,5 +1011,6 @@ body{
 .fade{
     animation: fade forwards 2s;
 }
+
 
 
