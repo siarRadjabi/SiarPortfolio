@@ -15,6 +15,8 @@
     </head>
 <body>
 
+
+
     <div id="Acceuil_page">
         <div class="First-view">
             <nav class="navbar navbar-expand-xl mainNavbar">
@@ -59,7 +61,7 @@
             </div>
         </div>
         <div class="divider">
-            <h1> LA QUALITÉ ASSURÉE</h1>
+            <h1> SIGNATURE ÉLECTRONIQUE DISPONIBLE</h1>
             <div class="See_more_container">
                 <a class="See_more"  onclick="changePage('Service_Page'); document.getElementById('rendez-vous').scrollIntoView()">PRENDRE RENDEZ-VOUS</a>
             </div>
@@ -95,8 +97,36 @@
                 <a class="See_more" href="#" onclick="changePage('Service_Page')">EN SAVOIR PLUS</a>
             </div>
             <div class="Actualités">
-                <h1>Actualités</h1>
+                <h1>Actualités et blogue</h1>
+                <ul class="Blogue_list">
+                    <li class="blogue_container">
+                        <img class="blogue_img" src="cdd20-81PkOTYkN2Y-unsplash.jpg"/>
+                        <h2 style="padding-bottom: 15%;" class="blogue_title">Que fait le notaire en immobilier?</h2>
+                        <a class="blogue_link" target="_blank" href="556043-Immobilier_fiche_iceberg_Letter_F_Web.pdf">Lire la suite</a>
+                    </li>
+
+                    <li class="blogue_container">
+                        <img class="blogue_img" src="green-chameleon-s9CC2SKySJM-unsplash.jpg"/>
+                        <h2 class="blogue_title">5 bonnes raisons de vouloir faire son testament :</h2>
+                        <a class="blogue_link" target="_blank" href="556043-Immobilier_fiche_iceberg_Letter_F_Web.pdf">Lire la suite</a>
+                    </li>
+
+                    <li class="blogue_container">
+                        <img class="blogue_img" src="yiorgos-ntrahas-mcAUHlGirVs-unsplash.jpg"/>
+                        <h2 class="blogue_title">Ventes d’actifs d’entreprise ou vente d’actions ?</h2>
+                        <a class="blogue_link" target="_blank" href="556043-Immobilier_fiche_iceberg_Letter_F_Web.pdf">Lire la suite</a>
+                    </li>
+                </ul>
             </div>
+
+
+
+            <div class="Partenaires">
+                <h1>Partenaires d'affaires</h1>
+                <img style="width: 300px; height: 300px" src="G_eden_logo.png"/>
+            </div>
+
+
         </div>
     </div>
 
@@ -134,32 +164,38 @@
         <div class="about_us" style="padding-bottom: 2%">
             <div class="about_us_text">
                 <h2>Maitre Rouslan Radjabi</h2>
-                <p1>Welcome to BossCut Barbershop! We have independent staffs who enjoy what they are doing and have a friendly
-                    approach to deliver their best to each and every customers. All our staffs work toward the same goal:
-                    Customers leave our store with the best service offered! We offer a wide variety of hair services that
-                    fit each clients’ lifestyle and we only use quality hair-care products. We ensure that our guests are happy
-                    with our work and are willing to come back.
-                    New customers are always welcomed to join us for any hair care needs.</p1>
+                <p1>
+                    <br>Me Rouslan Radjabi est titulaire d'un baccalauréat de droit civil de l'université de Montréal et
+                    d'une maîtrise en droit notarial de l'Université de Sherbooke, et
+                    est membre de la Chambre des notaires depuis 2022.<br><br>
+
+                    Ses champs de pratique incluent le droit immobilier,
+                    le droit des affaires, le droit de la personne, ainsi que le règlement de succession.<br><br>
+
+                    En dehors du milieu académique,
+                    Me Rouslan Radjabi a un intérêt marqué pour le sport, et plus particulièrement pour le soccer,
+                    dont il pratique depuis l'âge de 5 ans.
+                    <br><br>
+                    Me Rouslan Radjabi parle couramment le français, l'anglais et le dari.
+
+                </p1>
                 <br>
+                <br>
+                <h2>Diplôme :</h2>
                 <br>
                 <p2>
-                    “Life is too short to have boring hair.”
+                    L.L.M (Maîtrise en droit notarial), Université de Sherbrooke, 2021
                 </p2>
                 <br>
                 <br>
                 <p3>
-                    “Life isn’t perfect, but your hair can be.”
+                    L.L.B. (Baccalauréat en droit), Université de Montréal, 2020
                 </p3>
                 <br>
                 <br>
                 <p5>
-                    “Being happy never goes out of style.”
+                    B. Sc. (Baccalauréat en sciences biologiques), Université de Montréal, 2016
                 </p5>
-                <br>
-                <br>
-                <p6>
-                    “Let your hair do the talking.”
-                </p6>
             </div>
             <div class="about_us_img" style="padding-bottom: 10%">
                 <img src="hunters-race-MYbhN8KaaEc-unsplash.jpg"/>
@@ -168,77 +204,177 @@
     </div>
 
     <div id="Service_Page">
-        <nav class="navbar navbar-expand-xl mainNavbar">
-              <a target="_blank" class="navbar-brand" href="logo.png">
-                  <img src="logo.png"/>
-              </a>
-              <button class="navbar-toggler navbar-dark"  type="button" data-bs-toggle="collapse"
-                      data-bs-target=".main-navigation" aria-controls="navbarToggleExternalContent"
-                      aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse main-navigation">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="changePage('Acceuil_page')">Accueil</a>
-                    </li>
+        <div class="Service_first_view">
+            <nav class="navbar navbar-expand-xl mainNavbar">
+                  <a target="_blank" class="navbar-brand" href="logo.png">
+                      <img src="logo.png"/>
+                  </a>
+                  <button class="navbar-toggler navbar-dark"  type="button" data-bs-toggle="collapse"
+                          data-bs-target=".main-navigation" aria-controls="navbarToggleExternalContent"
+                          aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse main-navigation">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="changePage('Acceuil_page')">Accueil</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="changePage('A_propos_page')">À propos</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="changePage('A_propos_page')">À propos</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="changePage('Service_Page')">Mes services</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="changePage('Service_Page')">Mes services</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="changePage('Contact_Page')">Me joindre</a>
-                    </li>
-                  </ul>
-              </div>
-        </nav>
-        <h1 class="service_title">Mes services </h1>
-        <ul class="Gestion_box_list">
-            <li class="">
-                <h1 class="Gestion_box_name">Droit immobilier<br></h1>
-                <p2 class="Gestion_box_description">
-                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    It has survived not only five centuries
-                </p2>
-            </li>
-            <li class="">
-                <h1 class="Gestion_box_name">Droit des affaires<br></h1>
-                <p2 class="Gestion_box_description">
-                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    It has survived not only five centuries
-                </p2>
-            </li>
-            <li class="">
-                <h1 class="Gestion_box_name">Droit de la personne<br></h1>
-                <p2 class="Gestion_box_description">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    It has survived not only five centuries
-                </p2>
-            </li>
-        </ul>
-        <div class="Email_Form" id="rendez-vous" style="margin-left: 5%; padding-bottom: 2%">
-        <h1>Envoyer une demande de rendez-vous</h1><br>
-        <p1>Je vous répondrai dans le plus bref délai</p1><br/><br/>
-            <form action="/contact"  method="POST">
-                <label class="contact_form">Nom complet<br> <input id="name_input_R" type="text" name="Name"/></label><br/><br/>
-                <label class="contact_form">Courriel<br> <input id="email_input_R" type="email" name="Email"/></label><br/><br/>
-                <label class="contact_form">Numéro de téléphone<br> <input id="tel_input_R" type="tel" name="Telephone"/></label><br/><br/>
-                <label class="contact_form">Date<br> <input id="date_input_R" type="date" name="Date"/></label><br/><br/>
-                <label class="contact_form">Sujet<br> <input id="subject_input_R" type="text" name="Name"/></label><br/><br/>
-                <label class="contact_form"> Message<br> <textarea id="message_input_R" name="Message" rows="4" cols="50" maxlength="1000"></textarea></label><br/><br/>
-                <button class="contact_button"  onclick="sendData()" type="submit">Envoyer</button>
-            </form>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="changePage('Contact_Page')">Me joindre</a>
+                        </li>
+                      </ul>
+                  </div>
+            </nav>
+            <h1 class="service_title">Mes services </h1>
+            <ul class="Gestion_box_list">
+                <li class="Gestion_box_container">
+                    <h1 class="Gestion_box_name">Droit immobilier<br></h1>
+                    <ul class="Gestion_box_description">
+                         <li>
+                             Achat et vente de propriété
+                         </li>
+                        <li>
+                            Offre d’achat
+                        </li>
+                        <li>
+                            Financement hypothécaire
+                        </li>
+                        <li>
+                            Servitude
+                        </li>
+                        <li>
+                            Examen de titres immobiliers
+                        </li>
+                        <li>
+                            Quittance et mainlevée
+                        </li>
+                        <li>
+                            Hypothèque légale
+                        </li>
+                        <li>
+                            Contrat d’indivision
+                        </li>
+                    </ul>
+                </li>
+                <li class="Gestion_box_container">
+                    <h1 class="Gestion_box_name">Droit des affaires<br></h1>
+                    <ul class="Gestion_box_description">
+                        <li>
+                            Incorporation d’une société par actions (provinciale ou fédérale)
+                        </li>
+                        <li>
+                            Modification des statuts de constitution
+                        </li>
+                        <li>
+                            Mise à jour du livre de minute de l’entreprise
+                        </li>
+                        <li>
+                            Contrat de société en nom collectif
+                        </li>
+                        <li>
+                            Contrat de société en nom collectif à responsabilité limitée
+                        </li>
+                        <li>
+                            Contrat de partage de dépenses
+                        </li>
+                        <li>
+                            Contrat de société en commandite
+                        </li>
+                        <li>
+                            Contrat de société en participation
+                        </li>
+                        <li>
+                            Bail commercial
+                        </li>
+                        <li>
+                            Vente d’actions
+                        </li>
+                        <li>
+                            Vente d’actifs d’entreprise
+                        </li>
+                    </ul>
+                </li>
+                <li class="Gestion_box_container">
+                    <h1 class="Gestion_box_name">Droit de la personne<br></h1>
+                    <ul class="Gestion_box_description">
+                        <li>
+                            Testament
+                        </li>
+                        <li>
+                            Codicille
+                        </li>
+                        <li>
+                            Mandat de protection
+                        </li>
+                        <li>
+                            Directives médicales anticipées
+                        </li>
+                        <li>
+                            Procuration générale/spécifique
+                        </li>
+                        <li>
+                            Donation
+                        </li>
+                        <li>
+                            Contrat de mariage
+                        </li>
+                    </ul>
+                </li>
+                <li class="Gestion_box_container">
+                    <h1 class="Gestion_box_name">Succession<br></h1>
+                    <ul class="Gestion_box_description">
+                        <li>
+                            Vérification de testament
+                        </li>
+                        <li>
+                            Déclaration d’hérédité
+                        </li>
+                        <li>
+                            Nomination de liquidateur
+                        </li>
+                        <li>
+                            Inventaire successorale
+                        </li>
+                        <li>
+                            Renonciation à la succession
+                        </li>
+                        <li>
+                            Renonciation In Favorem
+                        </li>
+                        <li>
+                            Déclaration de transmission immobilière ou mobilière
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="divider"style="height: 120px">
+            <h1> Prendre rendez-vous</h1>
+        </div>
+        <div class="Service_second_view">
+            <div class="Email_Form" id="rendez-vous" style="  margin-left: 10%; padding-bottom: 2%">
+            <h1>Envoyer une demande</h1><br>
+            <p1>Je vous répondrai dans le plus bref délai</p1><br/><br/>
+                <form action="/contact"  method="POST">
+                    <label class="contact_form">Nom complet<br> <input id="name_input_R" type="text" name="Name"/></label><br/><br/>
+                    <label class="contact_form">Courriel<br> <input id="email_input_R" type="email" name="Email"/></label><br/><br/>
+                    <label class="contact_form">Numéro de téléphone<br> <input id="tel_input_R" type="tel" name="Telephone"/></label><br/><br/>
+                    <label class="contact_form">Date<br> <input id="date_input_R" type="date" name="Date"/></label><br/><br/>
+                    <label class="contact_form">Sujet<br> <input id="subject_input_R" type="text" name="Name"/></label><br/><br/>
+                    <label class="contact_form"> Message<br> <textarea id="message_input_R" name="Message" rows="4" cols="50" maxlength="1000"></textarea></label><br/><br/>
+                    <button class="contact_button"  onclick="sendData()" type="submit">Envoyer</button>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -369,7 +505,7 @@
                     <h1>Navigation</h1>
                 </li>
                 <li>
-                    <a href="#" onclick="changePage('Acceuil_page')">Acceuil</a>
+                    <a href="#" onclick="changePage('Acceuil_page')">Accueil</a>
                 </li>
                 <li>
                     <a href="#" onclick="changePage('A_propos_page')">À propos</a>

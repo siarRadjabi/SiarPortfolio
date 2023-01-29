@@ -86,10 +86,10 @@ observer2.observe(document.querySelector('.Second-view'));
 
 
 
-const observer3 = new IntersectionObserver(entries => {
+/**const observer3 = new IntersectionObserver(entries => {
   entries.forEach(entry => {
 
-    const Gestion_box_container_1 = entry.target.querySelector('.Gestion_box_list li:nth-child(1)');
+    /**const Gestion_box_container_1 = entry.target.querySelector('.Gestion_box_list li:nth-child(1)');
     const Gestion_box_container_2 = entry.target.querySelector('.Gestion_box_list li:nth-child(2)');
     const Gestion_box_container_3 = entry.target.querySelector('.Gestion_box_list li:nth-child(3)');
 
@@ -107,9 +107,9 @@ const observer3 = new IntersectionObserver(entries => {
 
     if (entry.isIntersecting) {
       console.log("yes");
-      Gestion_box_container_1.classList.add('border-trace');
-      Gestion_box_container_2.classList.add('border-trace');
-      Gestion_box_container_3.classList.add('border-trace');
+      /**Gestion_box_container_1.classList.add('fade');
+      Gestion_box_container_2.classList.add('fade');
+      Gestion_box_container_3.classList.add('fade');
 
 
       Gestion_box_header_1.classList.add('fade');
@@ -126,9 +126,9 @@ const observer3 = new IntersectionObserver(entries => {
 	  return; // if we added the class, exit the function
     }
     //console.log("no more");
-    Gestion_box_container_1.classList.remove('border-trace');
-    Gestion_box_container_2.classList.remove('border-trace');
-    Gestion_box_container_3.classList.remove('border-trace');
+    /**Gestion_box_container_1.classList.remove('fade');
+    Gestion_box_container_2.classList.remove('fade');
+    Gestion_box_container_3.classList.remove('fade');
 
 
 
@@ -142,7 +142,7 @@ const observer3 = new IntersectionObserver(entries => {
   });
 });
 
-observer3.observe(document.querySelector('.Gestion_box_list'));
+observer3.observe(document.querySelector('.Gestion_box_list'));**/
 
 
 

@@ -235,11 +235,82 @@ body{
     padding-bottom: 5%;
 }
 
-.Actualités h2{
+
+
+.blogue_title{
+    color:black;
+    font-size: 2vw;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.Blogue_list{
+    display: inline-flex;
+    font-size: 2vw;
+    list-style-type: none;
+    margin-right: 5%;
+}
+
+.Blogue_list li{
+    margin-left: 5%;
+}
+
+
+
+.blogue_container{
+    border-radius: 16px;
+    background: white;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: center;
+    padding:2%;
+    color: black;
+    width: 30%;
+}
+
+/**
+.blogue_container:hover{
+    color: black;
+    background:goldenrod ;
+}**/
+
+.blogue_img{
+    width: 100%;
+    height: 300px;
+}
+
+.blogue_link{
+    color: goldenrod;
+}
+
+.blogue_link:hover{
+    color: blue;
+}
+
+
+
+.Partenaires{
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+}
+
+.Partenaires h1{
+    color: goldenrod;
+    font-size: 5vw;
+    padding-bottom: 5%;
+}
+
+.Partenaires h2{
     text-align: center;
     color: white;
     font-size: 5vw;
 }
+
+
 
 
 /*A propos*/
@@ -305,7 +376,7 @@ body{
       padding-right: 10%;
       padding-left: 10%;   }
       .about_us_img {
-        margin-top: 3%;
+        margin-top: 7%;
         margin-left: 5%;   }
         .about_us_img img {
           width: 350px;
@@ -316,9 +387,28 @@ body{
 
 #Service_Page{
     display: none;
-    animation: comeFromRight 2s forwards;
-    background-image: url("scott-graham-OQMZwNd3ThU-unsplash.jpg");
-    background-size: 100% 100%;
+    animation: comeFromLeft 2s forwards;
+}
+
+.Service_first_view{
+    background-image: url("leon-seibert-9i5eqBarv-k-unsplash (1).jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    padding-bottom: 5%;
+}
+
+.Service_second_view{
+    padding-top: 5%;
+    background-image: url("matthias-mullie-VAxCHgJvZ0g-unsplash.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    padding-bottom: 5%;
 }
 
 .service_title{
@@ -337,7 +427,7 @@ body{
 
 .Gestion_box_container{
     /*width: 30%;*/
-    color:goldenrod;
+    color:white;
     padding: 5%;
     background: rgba(255, 255, 255, 0);
     border-radius: 16px;
@@ -349,21 +439,21 @@ body{
 
 .Gestion_box_name{
     font-size: 5vw;
-    opacity: 0;
     color: goldenrod;
     padding-bottom: 2%;
 }
 
 .Gestion_box_description{
-    opacity: 0;
     font-size: 2vw;
+}
 
+.Gestion_box_description li{
+    padding-bottom: 2%;
 }
 
 
 
-
-.Gestion_box_list li:nth-child(1) h1{
+/**.Gestion_box_list li:nth-child(1) h1{
     animation-delay: 0.5s;
 }
 .Gestion_box_list li:nth-child(2) h1{
@@ -401,7 +491,7 @@ body{
 
 
 .Gestion_box_list li:nth-child(1){
-    /*animation-delay: 1.5s;*/
+    animation-delay: 1.5s;
 
 }
 .Gestion_box_list li:nth-child(2){
@@ -412,7 +502,7 @@ body{
 .Gestion_box_list li:nth-child(3){
     animation-delay: 0.5s;
 
-}
+}**/
 
 
 .border-trace{
@@ -421,7 +511,7 @@ body{
 
 
 /* Chrome, Safari, Opera */
-@-webkit-keyframes border-tracing {
+/**@-webkit-keyframes border-tracing {
     0%{
         border-top: solid 2px;
         border-image-source:linear-gradient(to right, black 90% ,white 10% );
@@ -491,10 +581,10 @@ body{
         backdrop-filter: blur(1.5px);
         -webkit-backdrop-filter: blur(6.5px);
         border: 1px solid rgba( 255, 255, 255, 0.18 );
-        /**transform: translateX(-400%);**/
+        transform: translateX(-400%);
         font-size: 16px;
     }
-}
+}**/
 
 /*Contact*/
 
