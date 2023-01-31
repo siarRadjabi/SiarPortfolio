@@ -226,7 +226,7 @@ body{
     grid-row-start: 0;
     grid-row-end: 1;
     opacity: 0;
-    animation-delay: 0.75s;
+    animation-delay: 1.00s;
 }
 
 .Keyword_element_animate{
@@ -885,6 +885,133 @@ body{
     color: blue;
     text-decoration: underline;
 }
+
+/**Articles**/
+
+
+#article_1{
+    display: none;
+    background-image: url("giammarco-zeH-ljawHtg-unsplash.jpg");
+    /*background-size: 100% 100%;*/
+    background-repeat: no-repeat;
+    min-height: 600px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.article_content{
+    padding-right: 10% ;
+    padding-left:10% ;
+}
+
+
+
+.article_title{
+    font-size: 4vw;
+    color: goldenrod;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.a_first_paragraph{
+    text-align:justify;
+    font-size: 2vw;
+}
+
+.a1_5_reasons{
+    margin-top: 2%;
+    font-size: 3vw;
+    color: silver;
+    padding-bottom: 5%;
+}
+
+.a1_5_reasons li{
+    margin-top: 5%;
+}
+
+
+.a1_5_reasons h2{
+    color: silver;
+    font-size: 3vw;
+}
+
+.a1_5_reasons p2{
+    font-size: 2vw;
+    color: white;
+    text-align: justify;
+}
+
+.article_last_paragraph{
+    font-size: 2vw;
+    text-align: justify;
+}
+
+.a_signature{
+    font-size: 1.5vw;
+    color: goldenrod;
+    margin-top: 5%;
+}
+
+
+
+
+#article_2{
+    display: none;
+    background-image: url("giammarco-zeH-ljawHtg-unsplash.jpg");
+    /*background-size: 100% 100%;*/
+    background-repeat: no-repeat;
+    min-height: 600px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 5%;
+    padding-top: 5%;
+
+}
+
+.a2_first_list{
+    margin-top: 2%;
+    font-size: 2vw;
+    margin-left: 5%;
+}
+
+
+.a2_second_list h3{
+    color: silver;
+}
+
+
+.a2_second_list{
+    font-size: 3vw;
+}
+
+.a2_second_list p{
+    font-size: 2vw;
+}
+
+.a2_third_list{
+    font-size: 3vw;
+    margin-top: 5%;
+    list-style: none;
+}
+
+.a2_third_list h5{
+    font-size: 2.5vw;
+    color: silver;
+    text-decoration: underline;
+}
+
+.a2_third_list li{
+    font-size: 2vw;
+    padding-bottom: 2%;
+}
+
+
 
 @media screen and (max-width: 775px) {
     .credit {

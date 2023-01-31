@@ -152,8 +152,10 @@ let homePage=document.getElementById("Acceuil_page");
 let AboutPage=document.getElementById("A_propos_page");
 let ContactPage=document.getElementById("Contact_Page");
 let ServicePage=document.getElementById("Service_Page");
+let artcile_1=document.getElementById("article_1");
+let artcile_2=document.getElementById("article_2");
 
-const Pages = [homePage, AboutPage, ContactPage, ServicePage];
+const Pages = [homePage, AboutPage, ContactPage, ServicePage, artcile_1, artcile_2];
 
 
 function changePage(x){
