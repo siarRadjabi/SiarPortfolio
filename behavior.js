@@ -173,6 +173,7 @@ function showList_1() {
     var x = document.getElementById("service_list_immobilier");
     if (x.style.display === "none") {
         x.style.display = "block";
+        console.log("block")
     } else {
         x.style.display = "none";
     }
@@ -188,11 +189,11 @@ function showList_2() {
 }
 
 function showList_3() {
-    var x = document.getElementById("service_list_personne");
-    if (x.style.display === "none") {
-        x.style.display = "block";
+    var personne = document.getElementById("service_list_personne");
+    if (personne.style.display === "none") {
+        personne.style.display = "block";
     } else {
-        x.style.display = "none";
+        personne.style.display = "none";
     }
 }
 

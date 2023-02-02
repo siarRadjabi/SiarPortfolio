@@ -154,6 +154,12 @@ body{
     background-image:linear-gradient(to right,black,goldenrod);
 }
 
+#mobile_1_divider{
+    height: 100px;
+    display: none;
+    padding-bottom: 0;
+}
+
 
 
 
@@ -231,6 +237,16 @@ body{
 
 .Keyword_element_animate{
     animation: fade 1s forwards;
+}
+
+.keyword_mobile_view{
+    display:none;
+    color: white;
+    text-decoration: none;
+}
+
+.keyword_mobile_view:hover{
+    border: 2px solid goldenrod;
 }
 
 .Actualités{
@@ -492,21 +508,7 @@ body{
     padding-bottom: 2%;
 }
 
-#service_list_affaire{
-    display: none;
-}
 
-#service_list_immobilier{
-    display: none;
-}
-
-#service_list_personne{
-    display: none;
-}
-
-#service_list_Succession{
-    display: none;
-}
 
 
 
@@ -1094,7 +1096,6 @@ body{
     }
 
 
-
     .keyword_list li:nth-child(1){
         border-right: none;
         border-bottom: 2px solid goldenrod ;
@@ -1124,7 +1125,6 @@ body{
 
     .keyword_list li:nth-child(4){
         border-right: none;
-        border-bottom: 2px solid goldenrod ;
         padding-right: 30%;
         padding-left: 30%;
         margin-top: 2%;
@@ -1157,6 +1157,32 @@ body{
         margin-left: 25%;
     }
 
+    .keyword_mobile_view{
+        display: block;
+    }
+
+    .keyword_computer_view{
+        display: none;
+    }
+
+    .Actualités{
+        margin-top: 0;
+        background-image: url("matthias-mullie-VAxCHgJvZ0g-unsplash.jpg");
+        background-size: 100% 100%;
+        padding-top: 2%;
+    }
+
+    .Actualités h1{
+        display: none;
+    }
+
+    #mobile_1_divider{
+        display: block;
+    }
+
+    .Blogue_list li:first-child{
+        margin-top: 0;
+    }
 
 
     /*.keyword_list li img{
@@ -1164,6 +1190,9 @@ body{
         height: 150px;
     }*/
 
+    #real_see_more{
+        display: none;
+    }
 
     #Barber_credit{
         font-size: 18px;
@@ -1172,6 +1201,8 @@ body{
     .Credit_Barber{
         font-size: 16px;
     }
+
+
 
 }
 

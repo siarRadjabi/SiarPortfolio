@@ -62,33 +62,59 @@
         <div class="divider">
             <h1> SIGNATURE ÉLECTRONIQUE DISPONIBLE</h1>
             <div class="See_more_container">
-                <a class="See_more"  onclick="changePage('Service_Page'); document.getElementById('rendez-vous').scrollIntoView()">PRENDRE RENDEZ-VOUS</a>
+                <a class="See_more"  onclick="changePage('Contact_Page')">Envoyez-moi un courriel</a>
             </div>
         </div>
         <div class="Second-view">
             <div class="keyword_content">
                 <ul class="keyword_list">
                     <li>
-                        <h1> Droit immobilier </h1>
-                        <img src="dillon-kydd-XGvwt544g8k-unsplash.jpg">
-
+                        <div class="keyword_computer_view">
+                            <h1> Droit immobilier </h1>
+                            <img src="sean-pollock-PhYq704ffdA-unsplash.jpg">
+                        </div>
+                        <a onclick="changePage('Service_Page')" class="keyword_mobile_view">
+                            <h1> Droit immobilier </h1>
+                            <img src="sean-pollock-PhYq704ffdA-unsplash.jpg">
+                        </a>
                     </li>
                     <li>
-                        <h1>Droit des affaires</h1>
-                        <img src="hunters-race-MYbhN8KaaEc-unsplash.jpg">
+                        <div class="keyword_computer_view">
+                            <h1>Droit des affaires</h1>
+                            <img src="hunters-race-MYbhN8KaaEc-unsplash.jpg">
+                        </div>
+                        <a onclick="changePage('Service_Page')" class="keyword_mobile_view">
+                            <h1>Droit des affaires</h1>
+                            <img src="hunters-race-MYbhN8KaaEc-unsplash.jpg">
+                        </a>
                     </li>
                     <li>
-                         <h1>Droit de la personne</h1>
-                        <img src="mimi-thian-ZKBzlifgkgw-unsplash.jpg">
+                        <div class="keyword_computer_view">
+                             <h1>Droit de la personne</h1>
+                            <img src="alvaro-serrano-hjwKMkehBco-unsplash.jpg">
+                        </div>
+                        <a onclick="changePage('Service_Page')" class="keyword_mobile_view">
+                            <h1>Droit de la personne</h1>
+                            <img src="alvaro-serrano-hjwKMkehBco-unsplash.jpg">
+                        </a>
                     </li>
                     <li>
-                        <h1>Succession</h1>
-                        <img src="hunters-race-MYbhN8KaaEc-unsplash.jpg">
+                        <div class="keyword_computer_view">
+                            <h1>Succession</h1>
+                            <img src="romain-dancre-doplSDELX7E-unsplash.jpg">
+                        </div>
+                        <a onclick="changePage('Service_Page')" class="keyword_mobile_view">
+                            <h1>Succession</h1>
+                            <img src="romain-dancre-doplSDELX7E-unsplash.jpg">
+                        </a>
                     </li>
                 </ul>
             </div>
             <div class="See_more_container" style="margin-top: 5%; text-align: center">
-                <a class="See_more" href="#" onclick="changePage('Service_Page')">EN SAVOIR PLUS</a>
+                <a class="See_more" id="real_see_more" href="#" onclick="changePage('Service_Page')">EN SAVOIR PLUS</a>
+            </div>
+            <div class="divider" id="mobile_1_divider">
+                <h1>Actualités et blogue</h1>
             </div>
             <div class="Actualités">
                 <h1>Actualités et blogue</h1>
@@ -96,7 +122,7 @@
                     <li class="blogue_container">
                         <img class="blogue_img" src="cdd20-81PkOTYkN2Y-unsplash.jpg"/>
                         <h2 id="blogue_1" class="blogue_title">Que fait le notaire en immobilier?</h2>
-                        <a class="blogue_link" target="_blank" href="556043-Immobilier_fiche_iceberg_Letter_F_Web.pdf">Lire la suite</a>
+                        <a class="blogue_link" target="_blank" href="556043-Immobilier_fiche_iceberg_Letter_F_Web.pdf">Télécharger PDF</a>
                     </li>
 
                     <li class="blogue_container">
@@ -114,11 +140,11 @@
             </div>
 
 
-
+            <!--
             <div class="Partenaires">
                 <h1>Partenaires d'affaires</h1>
                 <img style="width: 300px; height: 300px" src="G_eden_logo.png"/>
-            </div>
+            </div>-->
 
 
         </div>
@@ -157,7 +183,7 @@
         <h1>À propos</h1>
         <div class="about_us" style="padding-bottom: 2%">
             <div class="about_us_text">
-                <h2>Maitre Rouslan Radjabi</h2>
+                <h2>Maître Rouslan Radjabi</h2>
                 <p1>
                     <br>Me Rouslan Radjabi est titulaire d'un baccalauréat de droit civil de l'Université de Montréal et
                     d'une maîtrise en droit notarial de l'Université de Sherbooke, et
@@ -230,7 +256,7 @@
             <ul class="Gestion_box_list">
                 <li class="Gestion_box_container">
                     <a onclick="showList_1()"><h1 class="Gestion_box_name">Droit immobilier <br></h1></a>
-                    <ul  id="service_list_immobilier" class="Gestion_box_description">
+                    <ul  id="service_list_immobilier" style="display: none" class="Gestion_box_description">
                          <li>
                              Achat et vente de propriété
                          </li>
@@ -259,7 +285,7 @@
                 </li>
                 <li class="Gestion_box_container">
                     <a onclick="showList_2()"><h1 class="Gestion_box_name">Droit des affaires<br></h1></a>
-                    <ul id="service_list_affaire" class="Gestion_box_description">
+                    <ul id="service_list_affaire" style="display: none" class="Gestion_box_description">
                         <li>
                             Incorporation d’une société par actions (provinciale ou fédérale)
                         </li>
@@ -300,7 +326,7 @@
                 </li>
                 <li class="Gestion_box_container">
                     <a onclick="showList_3()"><h1 class="Gestion_box_name">Droit de la personne<br></h1></a>
-                    <ul id="service_list_personne" class="Gestion_box_description">
+                    <ul id="service_list_personne" style="display: none" class="Gestion_box_description">
                         <li>
                             Testament
                         </li>
@@ -326,7 +352,7 @@
                 </li>
                 <li class="Gestion_box_container">
                     <a onclick="showList_4()"><h1 class="Gestion_box_name">Succession<br></h1></a>
-                    <ul id="service_list_Succession" class="Gestion_box_description">
+                    <ul id="service_list_Succession" style="display: none" class="Gestion_box_description">
                         <li>
                             Règlement complet de successions
                         </li>
