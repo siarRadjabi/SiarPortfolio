@@ -9,6 +9,7 @@ body{
     cursor: none;
     background-color: black;
     color: white;
+    max-width: 6000px;
 }
 
 #Acceuil_page{
@@ -1351,5 +1352,13 @@ body{
     animation: fade forwards 2s;
 }
 
+/**stupid zoom**/
+
+
+@media screen and (min-width:1800px){
+    .divider{
+        height: 300px;
+    }
+}
 
 
